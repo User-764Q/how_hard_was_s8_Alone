@@ -1,0 +1,132 @@
+---
+output: 
+  html_document:
+    toc: true
+    toc_float: 
+      collapsed: false
+  number_sections: true
+ 
+title: ""
+author: "[User-764Q](https://github.com/User-764Q)"
+date: "`r paste0('Last Run: ', format(Sys.time(), '%A %d-%B-%Y'))`"
+params: 
+  param1: "Don't Forget about params"
+
+---
+
+<style>
+
+#TOC {
+ font-family: Calibri; 
+ font-size: 16px;
+ border-color: #3D68DF;
+ background: #3D68DF;
+}
+
+body {
+  font-family: Garamond;
+  font-size: 16px; 
+  border-color: #D0D0D0;
+  background-color: #D0D0D0;
+  color: #1A1A1A;
+}
+
+pre {
+  color: #1A1A1A
+  background: #D0D0D0;
+  background-color: #D0D0D0
+  font-family: Calibri; 
+  
+}
+
+</style>
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+knitr::opts_chunk$set(collapse = TRUE)
+
+knitr::opts_chunk$set(warning = TRUE)
+
+knitr::opts_chunk$set(message = TRUE)
+
+knitr::opts_chunk$set(include = TRUE)
+
+custom_black <- '1A1A1A'
+custom_white <- 'C0C0C0'
+custom_grey_dark <- '6F6F6F'
+custom_grey_light <- 'B2B2B2'
+custom_accent_blue <- '3D6BFF'
+
+```
+
+```{r libraries etc., message = FALSE }
+
+library(tidyverse)
+
+```
+
+```{r dataload}
+
+
+
+```
+
+# How Hard Was S8?
+
+Alone is one of my favourite TV shows, Ten people all by themselves try to survive 
+as long as they can, last one wins a big pile of cash. No film crew or anything 
+contestants film themselves and tap out when they have had enough, or get med checked
+form time to time and can get pulled if they are at risk of permanent damage. 
+
+The contestants get a choice of ten items from a list and randomly assigned an area. 
+
+That is basically the rules. There have been 7 seasons previously. 3 in Vancouver Island, 
+2 in Slave Lake one in Mongolia and one in Patagonia. 
+
+I previously did some analysis (git), (RPub) on seasons 1- 7 and found half contestants lasted until day 40. 
+
+Season 8 seemed particularly brutal with no contestants having much luck with fishing
+which was a staple for many contestants previously. I wanted to do a quantative comparison
+to see if the contestnants left earlier compared with the previous seasons on average, 
+or if the reasons for leaving were different? 
+
+## Creating Data Set
+
+I created the data set myself from my recolection of the show and Wikipedia. 
+
+I didn't love the categories in the Wikipedia page for why people left so I made 
+my own. The hardest part was trying to judge if people were leaving because they 
+didn't want to do it (for various legitimate reasons I in no way want to minimize), 
+or if they were starving. I did this by deciding soley based on my own 
+impression/opinion, would the contestant keep playing if they got a good meal. If
+they would leave any way I put them in didn't want to do it any more, otherwise 
+I put them into the medical/starvation category.
+
+## Analysing and Aggregating Seasons 1 - 7 
+
+## Comparing S8 To previous Seasons
+
+### Contestants leaving first 10 days 
+
+### Days untill half of contestants have left 
+
+### Contestants starving/medical evacuation
+
+## Conclusion 
+
+I'm glad the data backed up my assumptions in general that season 8 was hard 
+with more medical/starvation departures on average and half the contestants leaving 
+earlier in the season. If anything this was a particularly hardy bunch because normally a few contestants drop out in the first few weeks but this time done dit. 
+
+I hope they find somewhere else for future seasons, its great to see the contestants
+sur-thrive and have at least some wins. I know it's not great watching everyone 
+live all year out there but there should be a bit of a balance. When all the 
+contestants are starving out, even after building a decent boat, or killing a deer
+then you know its not just bad luck or lack of skills. 
+
+```{r }
+
+```
+
